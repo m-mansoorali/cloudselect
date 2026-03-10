@@ -38,8 +38,9 @@ Or open a new terminal after sourcing .zshrc
 
 ---
 ## 📂 Example Output
+```bash
 Select Cloud Name:
-  > dev
+    dev
     staging
     prod
 
