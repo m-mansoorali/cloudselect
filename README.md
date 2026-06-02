@@ -17,19 +17,24 @@ An interactive CLI utility written in Go to select an OpenStack cloud from your 
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/<your-username>/cloudselect.git
+git clone https://github.com/m-mansoorali/cloudselect.git
 cd cloudselect
 go build -o cloudselect
 ```
+
 ---
+
 ## 🧪 Usage
+
 ```bash
 ./cloudselect
 eval $(./cloudselect 2>/dev/null | grep "^export OS_CLOUD")
 ```
+
 Or open a new terminal after sourcing .zshrc
 
 ---
+
 ## 🛠 Dependencies
 
 •  Go 1.20+
@@ -37,7 +42,9 @@ Or open a new terminal after sourcing .zshrc
 •  yaml.v3
 
 ---
+
 ## 📂 Example Output
+
 ```bash
 Select Cloud Name:
     dev
