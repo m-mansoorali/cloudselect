@@ -33,6 +33,17 @@ eval $(./cloudselect 2>/dev/null | grep "^export OS_CLOUD")
 
 Or open a new terminal after sourcing .zshrc
 
+Or the best way to run this is by creating a function in .zshrc or .bashrc and call the script
+
+```bash
+cloudselect() {
+  cd /<path>/cloudselect && ./cloudselect "$@"
+  source ~/.zshrc
+}
+```
+
+source the file once and now you can call the script ```cloudselect``` from anywhere. No need to source it again ever
+
 ---
 
 ## 🛠 Dependencies
